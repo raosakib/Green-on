@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)http://developerjahanzaib.netai.net/jquery_fading.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta charset="UTF-8">
+   <title>Website</title>
+ <link rel="stylesheet" type="text/css" href="styles.css">
+<!-- this script got from www.javascriptfreecode.com-Coded by: Krishna Eydatoula -->
+<script src="jquery-2.1.1.min.js"></script>
+<script>
+$(document).ready(function(e) {
+    $("#btn1").click(function(e) {
+        $("#img").fadeIn(1000);
+    });
+	$("#btn2").click(function(e) {
+        $("img").fadeOut(1000);
+    });
+	$("#btn3").click(function(e) {
+        $("img").fadeToggle(1000);
+    });
+	$("#btn4").click(function(e) {
+        $("#img").fadeTo(1000,0.3);
+    });
+	$("#btn5").click(function(e) {
+        $("#img").slideUp(1000);
+    });
+	$("#btn6").click(function(e) {
+        $("#img").slideDown(1000);
+    });
+	$("#btn7").click(function(e) {
+        $("#img").slideToggle(1000);
+    });
+	
+	$("#btn8").click(function(e) {
+        var a=$("#id4");
+		a.animate({left:'500px'});
+    });
+	
+	$("#btn9").click(function(e) {
+        var b=$("#id4");
+		b.animate({left:'300px'});
+    });
+	$("#btn10").click(function(e) {
+		$("#img").innerWidth(350);
+    });
+	$("#btn11").click(function(e) {
+		$("#img").innerWidth(700);
+    });
+	$("#btn12").click(function(e) {
+		$("#img").innerWidth(1000);
+    });
+});
+</script>
+   </head>
+   
+ <body>
+
+   <!--start container-->
+  <div id="container">
+<div id="header"></div>
+<!--end header--->
+
+
+<div class="nav">
+<div id="topnav">
+   <!--<ul id="nav" class="sf-menu">-->
+<ul class="clear">
+<li><a href="http://developerjahanzaib.netai.net/index.html">Home</a></li>
+<li><a href="http://developerjahanzaib.netai.net/CV.html">My CV</a></li>
+<li><a href="http://developerjahanzaib.netai.net/image_Map.html">Map Images</a></li>
+<li><a href="http://developerjahanzaib.netai.net/Image_Links.html">Images Links</a></li>
+<li><a href="http://developerjahanzaib.netai.net/Fonts.html">Font Size</a></li>
+<li><a class="drop" href="http://developerjahanzaib.netai.net/javascrpt_Code.html">JavaScript</a>
+<ul>
+<li><a href="http://developerjahanzaib.netai.net/Snow.html">Snow Falling</a></li>
+<li><a href="http://developerjahanzaib.netai.net/season.html">Season</a></li>
+<li><a href="http://developerjahanzaib.netai.net/fire.html">Fire Works</a></li>
+<li><a href="http://developerjahanzaib.netai.net/falling_leaves.html">Falling Leaves</a></li>
+<li><a href="http://developerjahanzaib.netai.net/bubble%20moving.html">Bubble Moving</a></li>
+<li class="last-child"><a href="http://developerjahanzaib.netai.net/dancing_Para.html">Text Dancing</a></li>
+</ul>
+
+</li>
+<li><a href="jquery_fading.html">Jquery Effect</a></li>
+<li class="last-child"><a href="http://developerjahanzaib.netai.net/background%20color.html">Background Change</a></li>
+</ul>
+</div>
+</div>
+ <!--end menu-->
+<div id="aside">
+<ul>
+<li><a href="http://developerjahanzaib.netai.net/index.html">Home</a></li>
+<li><a href="http://developerjahanzaib.netai.net/CV.html">My CV</a></li>
+<li><a href="http://developerjahanzaib.netai.net/image_Map.html">Map Images</a></li>
+<li><a href="http://developerjahanzaib.netai.net/Image_Links.html">Images Links</a></li>
+<li><a href="http://developerjahanzaib.netai.net/Fonts.html">Font Size</a></li>
+<li><a href="http://developerjahanzaib.netai.net/javascrpt_Code.html">JavaScript</a></li>
+<li><a href="jquery_fading.html">Jquery Effect</a></li>
+<li><a href="http://developerjahanzaib.netai.net/background%20color.html">Background Change</a></li>
+</ul>
+
+</div>
+
+<div id="section">
+ <center>
+<button id="btn1">Fade In</button>
+<button id="btn2">Fade Out</button>
+<button id="btn3">Fade Toggle</button>
+<button id="btn4">Fade To</button>
+<button id="btn5">Slide UP</button>
+<button id="btn6">Slide Down</button>
+<button id="btn7">Slide Toggle</button>
+<button id="btn8">Move right</button>
+<button id="btn9">Move left</button>
+<button id="btn10">Reduce Image Size</button>
+<button id="btn11">Normal Image Size</button>
+<button id="btn12">Increse Image Size</button>
+
+<br>
+<div id="id4" style="position: absolute; left: 500px;">
+<p>
+<img src="wc0me.gif" width="400" height="300" alt="No Images Founded" id="img" style="display: inline-block; opacity: 0.3; width: 1000px;">
+</p>
+</div>
+</center>
+</div>
+  <!--sidebar--->
+  <div id="sidebar">
+   <marquee direction="up"><h4>Jahanzaib Murtaza
+   <br>
+   Roll No:113
+   <br>
+   Class:Bs(cs eve-A)
+   </h4>
+   </marquee>
+   <marquee direction="down"><img src="img1.PNG" width="150" height="150" style="display: none;"></marquee>
+  </div>
+<!--end sidebar--->
+  <!--start footer-->
+    <div id="footer">   <p>
+    All reserved © 2014 &nbsp;| &nbsp;&nbsp;website is created by &nbsp;&nbsp;
+    <a href="http://developerjahanzaib.netai.net/jquery_fading.html#">jahanzaib.site40.net</a></p></div>
+
+   <!--end footer-->
+   </div>
+  
+
+
+<!-- Hosting24 Analytics Code -->
+<script type="text/javascript" src="count.php"></script>
+<!-- End Of Analytics Code -->
+</body></html>

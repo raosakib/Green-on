@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+
+<title>JQuery Tutorial</title>
+
+<style type="text/css">
+.par {
+	font-size: 16px;
+	font-style: italic;
+	color: #33C;
+	background-color: #FFC;
+	height: 300px;
+	width: 300px;
+	border: thick groove #096;
+}
+</style>
+</head>
+
+<body>
+<h1> This is heading one </h1>
+<p> This is my paragraph <br> This is second line </p>
+<script type="text/javascript" src="jquery.js"> </script>
+<script type="text/javascript">
+$(document).ready(function() {
+	
+    $('h1').mouseover(function(e) {
+        
+		$('p').addClass("par");
+		$('p').slideDown(500); 
+    });
+	  $('h1').mouseout(function(e) {
+        $('p').slideUp(500); 
+    });
+	
+	
+	
+	});
+</script>
+
+</body>
+</html>

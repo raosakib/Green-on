@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+
+<title>JQuery Tutorial</title>
+</head>
+
+<body>
+<h1> Move Mouse pointer here to see chain events </h1>
+<p> This is my paragraph <br> This is second line
+<br> you can also implement this function on click also
+ </p>
+<script type="text/javascript" src="jquery.js"> </script>
+<script type="text/javascript">
+$(document).ready(function() {
+	
+    $('h1').mouseover(function(e) {
+        $("p").css("color","red","font","34px").slideUp(2000).slideDown(2000); 
+
+    });
+	 
+	
+	
+	
+	});
+</script>
+
+</body>
+</html>

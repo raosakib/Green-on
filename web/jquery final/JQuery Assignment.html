@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0049)http://www.sibgha218.herobo.com/jqAssignment.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>JQuery Assignment </title>
+<script src="./JQuery Assignment_files/jquery.js"></script>
+<script>
+
+$(document).ready(function(e) {
+    $("button").click(function(e) {
+        var div=$("#div1");
+		div.animate({left:'900px'}, "slow");
+		div.animate({top:'520px'}, "slow");
+		div.animate({left:'-=900'}, "slow");
+		div.animate({top:'-=480px'}, "slow");
+
+    });
+});
+</script>
+</head>
+
+<body>
+<button>Start Animation</button><br><br>
+<div style="width: 200px; height: 200px; position: absolute; left: 0px; top: 40px;" id="div1"><img src="./JQuery Assignment_files/images.jpg"></div>
+
+
+
+
+
+	
+<!-- Hosting24 Analytics Code -->
+<script type="text/javascript" src="./JQuery Assignment_files/count.php"></script>
+<!-- End Of Analytics Code -->
+</body></html>

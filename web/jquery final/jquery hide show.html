@@ -1,0 +1,30 @@
+<html>
+<head>
+<script src="jquery.js"> </script>
+<script language="javascript1.5">
+$(document).ready(function(){ 
+	$("button#1").click(function()
+		{ 
+		$("p").hide(); 
+		});
+ }); 
+ 
+ // To Show paragraphs
+ $(document).ready(function(){ 
+	$("button#2").click(function()
+		{ 
+		$("p").show(); 
+		});
+ }); 
+</script>
+</head>
+<body>
+<h2>This is Heading text </h2>
+<p>This is paragraph 1 </p>
+<p>This is paragraph 2 text </p>
+<p>This is paragraph 3 text </p>
+<button id="1">Hide paragraphs </button>
+<button id="2">Show paragraphs </button>
+
+</body>
+</html>

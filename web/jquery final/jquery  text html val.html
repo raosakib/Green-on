@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<title>JQuery Tutorial</title>
+<script type="text/javascript" src="jquery.js"> </script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("#btn1").click(function(){ $("#test1").text("Hello world!"); }); 
+	$("#btn2").click(function(){ $("#test2").html("<b>Hello world!</b>"); }); 
+	$("#btn3").click(function(){ $("#test3").val("Dolly Duck"); }); 
+    });
+</script>
+</head>
+<body>
+<h1> how to change different HTML element values </h1>
+<div id="test1"><p> This is my paragraph 
+<br> This is second line
+<br> you can also implement this function on click also
+</p></div>
+<div id="test2">
+<p> This is my paragraph 2 
+<br> This is second line
+<br> you can also implement this function on click also
+ </p></div>
+  <input type=text id="test3">
+<br>
+ <button id="btn1">Button 1</button>
+ <button id="btn2">Button 2</button>
+ <button id="btn3">Button 3</button>
+</body>
+</html>

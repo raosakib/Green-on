@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+
+<title>JQuery Tutorial</title>
+</head>
+
+<body>
+<h1> This is heading one </h1>
+<p> This is my paragraph <br> This is second line </p>
+
+<script type="text/javascript" src="jquery.js"> </script>
+<h1>This is heading Two </h1>
+<p> This is my paragraph <br>
+  This is second line </p>
+<h1>This is heading Three </h1>
+<p> This is my paragraph <br>
+  This is second line </p>
+<p>&nbsp; </p>
+<script type="text/javascript">
+$(document).ready(function() {
+$('p').hide();
+   $('h1').click(function() {
+	   $(this).next().slideToggle(1000,'linear',"");
+	   
+	   });
+});
+
+
+  </script>
+</body>
+</html>

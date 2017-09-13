@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Jquery</title>
+<script src="jquery-1.10.1.min.js"></script>
+<script>
+$(document).ready(function(e) {
+
+	$("#btn").click(function(e){
+		for(var i=0; i<=10; i++){
+		$("#pic").animate({left:'1100px'},"slow");
+		$("#pic").animate({top:'390px'},"slow");
+		$("#pic").animate({left:'0px'},"slow");
+		$("#pic").animate({top:'0px'},"slow");
+		}
+		});
+	
+});
+</script>
+</head>
+
+<body>
+
+<button id="btn"> click here </button><br />
+ 
+<div id="pic" style="position:relative;">
+<img src="pic.jpg" width="200px" height="250"/>
+</div>
+</body>
+</html>
+

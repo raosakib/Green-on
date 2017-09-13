@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+
+<title>JQuery Tutorial</title>
+</head>
+
+<body>
+<h1> This is paragraph heading move mouse here to see details </h1>
+<p> This is my paragraph <br> This is second line
+<br> you can also implement this function on click also
+ </p>
+<script type="text/javascript" src="jquery.js"> </script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("p").hide();
+    $('h1').mouseover(function(e) {
+        $('p').slideDown(500); 
+    });
+	  $('h1').mouseout(function(e) {
+        $('p').slideUp(500); 
+    });
+	
+	
+	
+	});
+</script>
+
+</body>
+</html>
